@@ -21,7 +21,12 @@ WHERE DATE BETWEEN '01/01/2020'AND '1/03/2020'
 AND hour BETWEEN 15 AND 18
 ORDER BY avg_speed_kmh ASC
 
---Temukan anomali yang terdapat pada tabel sampel data tersebut!--First, find the meanSELECT AVG(hour) AS mean
+--Temukan anomali yang terdapat pada tabel sampel data tersebut!
+
+--First, find the mean
+
+SELECT AVG(hour) AS mean
+
 FROM PortofolioProject.dbo.Sample_Data
 --Mean is 7.96666666666667
 
